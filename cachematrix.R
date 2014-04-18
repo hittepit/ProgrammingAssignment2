@@ -29,8 +29,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getcache = getcache)
 }
 
-## Method that computes the inverse of the base matrix wrapped by the makeCacheMatrix
-## If the inverse has already been computed, it returns a cached value
+## Function that computes the inverse of the base matrix wrapped by the makeCacheMatrix
+## If the inverse has already been computed and cached, it returns a cached value
 ## else it computes the inverse and stores it in the cache before returning it
 cacheSolve <- function(x, ...) {
   # Get the cached value (if any)
